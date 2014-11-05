@@ -1,0 +1,33 @@
+<!-- Partial view :  Medical record-->
+<div class="medicalRecordContents">
+	<h3> Medical record : </h3>
+
+	<!-- Medical record contents -->
+	<ul class="list-group">
+		<li ng-repeat="item in medicalRecord | orderBy:predicate:reverse | offset: currentPage*itemsPerPage | limitTo: itemsPerPage" 
+			class="list-group-item" 
+			ng-class=" { 'list-group-item-danger' : item.type == 'allergie', 'list-group-item-warning' : item.type == 'illnesse', 'list-group-item-success' : item.type == 'prescription' }">
+	    	<div>
+	    		<p> <strong> {{item.type}} : {{item.name}} </strong> </p>
+	    		<p> date : {{item.date.to}} </p>
+	    		<p ng-if="item.doctor !== null"> by {{item.doctor}} </p>
+	    	</div>
+      	</li>
+    </ul>
+
+    <!-- Pagination -->
+    <nav>
+ 		<ul class="pagination">
+ 			<li ng-class="prevPageDisabled()">
+            	<a href ng-click="prevPage()">« Prev</a>
+            </li>
+            <li ng-repeat="n in range()"
+              	ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+             	<a ui-sref="patientInformations.medicalRecord">{{n+1}}</a>
+            </li>
+            <li ng-class="nextPageDisabled()">
+             	<a href ng-click="nextPage()">Next »</a>
+            </li>
+  		</ul>
+	</nav>
+</div>

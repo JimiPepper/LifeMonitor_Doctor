@@ -1,0 +1,16 @@
+<!-- Partial view :  Menu search -->
+<div class="menu_search navbar navbar-default">
+  <h3> Search a patient </h2>
+  <div>
+    <input type="search" ng-model="searchName" class="form-control" placeholder="Search.."/> 
+  </div>
+  <div>
+    <ul class="nav nav-pills nav-stacked nav-sidebar">
+      <!-- For all patients whose name contains searchName, sort by name -->
+      <li ng-repeat="patient in patients | filter:searchName | orderBy:'name' | limitTo:10">
+        <!-- Link towards medical record of this patient -->
+        <a ui-sref="patientInformations.medicalRecord({id:{{patient.id}}})"> {{patient.name}} </a>
+      </li>
+    </ul>
+  </div>
+</div>

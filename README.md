@@ -22,11 +22,6 @@ apt-get install nodejs-legacy
 - Installation package npm
 ===============================
 
-	- Installation de Yo: générateur de projet
-	-------------------------------------------
-
-	> sudo npm install --global yo
-
 	- Installation de Bower: gestionnaire de dépendances
 	-------------------------------------------------------
 
@@ -61,20 +56,12 @@ apt-get install nodejs-legacy
 	sudo npm install grunt-svgmin
 	sudo npm install grunt-ng-annotate
 
-- Construction de l'architecture de l'application:
----------------------------------------------------
-
-> sudo yo
-suivre instruction ...
-
-
 - Lancer appli :
 -------------------
 
-grunt serve
+> grunt serve
 
 - Lancer les tests:
 ---------------------
 
-Test en karma
-grunt test
+> grunt test

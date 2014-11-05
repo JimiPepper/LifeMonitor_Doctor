@@ -19,7 +19,7 @@ apt-get install nodejs-legacy
 > Afin de verifier l'installation de node.js : node --version && npm --version
 
 
-- Installation package npm
+- Installations avec npm
 ===============================
 
 	- Installation de Bower: gestionnaire de dépendances

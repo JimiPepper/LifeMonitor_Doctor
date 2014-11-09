@@ -28,6 +28,7 @@
         url: '/patients',
         views: {
           'searchPatient': { templateUrl: 'views/home-patientSearch.html', controller: 'patientsCtrl' },
+          'patientInformations': { templateUrl: 'views/noPatient.html'}
         }
       })
 

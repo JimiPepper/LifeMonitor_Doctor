@@ -7,7 +7,11 @@
  * # patientCtrl
  * Controller of the lifeMonitorDoctorApp
  */
-app.controller('patientCtrl', ['$scope', '$stateParams', 'Patients', function ($scope, $stateParams, Patients){
+app.controller('patientCtrl', ['$scope', '$stateParams', '$state', 'Patients', function ($scope, $stateParams, $state, Patients){
+	// For nav redirections
+	$scope.$state = $state;
+	$scope.$stateParams = $stateParams;
+
 	$scope.patient = null;
 
 	$scope.loadPatient = function() {

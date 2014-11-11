@@ -7,7 +7,7 @@
  * # medicalRecordCtrl
  * Controller of the lifeMonitorDoctorApp
  */
-app.controller('medicalRecordCtrl', ['$scope', '$stateParams', 'Patients', function ($scope, $stateParams, Patients) {
+app.controller('medicalRecordCtrl', ['$rootScope', '$scope', '$stateParams', 'Patients', function ($rootScope, $scope, $stateParams, Patients) {
 	
 	$scope.medicalRecordContents = [];
 
@@ -52,6 +52,7 @@ app.controller('medicalRecordCtrl', ['$scope', '$stateParams', 'Patients', funct
 		                doctor: prescription.doctor.name
 		            });
 				});
+				$rootScope.loading[1] = false; 
 			}
 		);
 	};

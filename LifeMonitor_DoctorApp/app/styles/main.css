@@ -31,6 +31,13 @@
 
 }
 
+.loading{
+  margin-left: 40em;
+  margin-top: 5em;
+  height: 15em;
+
+}
+
 #patientsResults {
   font-style: italic;
   color: grey;

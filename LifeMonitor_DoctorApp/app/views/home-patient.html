@@ -1,6 +1,10 @@
 <!-- Partial view :  Main container -->
 
-<div class="patientHome">
+<!-- Loading -->
+<img ng-if="loading[0] === true && loading[1] === true" src="../images/loading2.gif" class="loading">
+
+<!-- Patient informations -->
+<div ng-if="loading[0] === false && loading[0] === false" class="patientHome">
 
     <div id="patientHeader">
     	<h3> <img src="../images/utilisateur2.jpeg" style="height:50px;"> {{patient.name}} </h3>

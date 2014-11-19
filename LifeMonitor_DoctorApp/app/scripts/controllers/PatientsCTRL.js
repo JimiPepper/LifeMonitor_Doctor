@@ -20,7 +20,7 @@ app.controller('patientsCtrl', ['$scope', 'Patients', function ($scope, Patients
 	    	}, 
 	    	// ERROR
 	    	function(msg){
-	    		alert(msg);
+	    		alert('Error in loadPatients method');
 	    	}
 	    );
 	};

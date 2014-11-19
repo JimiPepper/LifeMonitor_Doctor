@@ -23,7 +23,7 @@ app.controller('medicalRecordCtrl', ['$rootScope', '$scope', '$stateParams', 'Pa
 		  	},
 		 	// ERROR
 			function(msg){
-		   		alert(msg);
+		   		alert('Error in getMedicalRecord(' + $stateParams.id + ') method');
 		   	}
 		)
 		.then(
@@ -90,7 +90,7 @@ app.controller('medicalRecordCtrl', ['$rootScope', '$scope', '$stateParams', 'Pa
     	}
   	};
 
- 	 $scope.nextPageDisabled = function() {
+ 	$scope.nextPageDisabled = function() {
     	return $scope.currentPage === $scope.pageCount() ? 'disabled' : '';
   	};
 

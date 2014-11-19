@@ -1,22 +1,30 @@
 'use strict';
 
-describe('Controller: AboutCtrl', function () {
+// Unit test of controller patientsCtrl
+describe('Controller: patientsCtrl', function () {
+
+  var scope, mockedPatientsFactory, patientsCtrl;
 
   // load the controller's module
-  beforeEach(module('lifeMonitorDoctorApp'));
+  // Mock PatientsFactory
+  beforeEach(module('lifeMonitorDoctorApp', function($provide) {
+    mockedPatientsFactory = {
+      getPatients: jasmine.createSpy()
+    };
 
-  var AboutCtrl,
-    scope;
+    $provide.value('Patients', mockedPatientsFactory);
+  }));
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AboutCtrl = $controller('AboutCtrl', {
+    patientsCtrl = $controller('patientsCtrl', {
       $scope: scope
     });
   }));
 
   it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+    scope.loadPatients();
+    expect(mockedPatientsFactory.getPatients).toHaveBeenCalled();
   });
 });

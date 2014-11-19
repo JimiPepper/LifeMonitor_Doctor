@@ -1,0 +1,160 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'karma-phantomjs-launcher',
+1 verbose cli   '–save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json lifemonitordoctor@0.0.0 No description
+5 warn package.json lifemonitordoctor@0.0.0 No repository field.
+6 warn package.json lifemonitordoctor@0.0.0 No README data
+7 warn package.json karma-chrome-launcher@0.1.5 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'karma-phantomjs-launcher', null ]
+10 verbose cache add name=undefined spec="karma-phantomjs-launcher" args=["karma-phantomjs-launcher",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'karma-phantomjs-launcher',
+11 verbose parsed url   path: 'karma-phantomjs-launcher',
+11 verbose parsed url   href: 'karma-phantomjs-launcher' }
+12 verbose cache add [ '–save-dev', null ]
+13 verbose cache add name=undefined spec="–save-dev" args=["–save-dev",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: '–save-dev',
+14 verbose parsed url   path: '–save-dev',
+14 verbose parsed url   href: '–save-dev' }
+15 silly lockFile e0cbf986-karma-phantomjs-launcher karma-phantomjs-launcher
+16 verbose lock karma-phantomjs-launcher /Users/edmondvanovertveldt/.npm/e0cbf986-karma-phantomjs-launcher.lock
+17 silly lockFile 36ac6028-save-dev –save-dev
+18 verbose lock –save-dev /Users/edmondvanovertveldt/.npm/36ac6028-save-dev.lock
+19 silly lockFile e0cbf986-karma-phantomjs-launcher karma-phantomjs-launcher
+20 silly lockFile e0cbf986-karma-phantomjs-launcher karma-phantomjs-launcher
+21 silly lockFile 36ac6028-save-dev –save-dev
+22 silly lockFile 36ac6028-save-dev –save-dev
+23 verbose addNamed [ 'karma-phantomjs-launcher', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile cdd40d81-karma-phantomjs-launcher karma-phantomjs-launcher@
+26 verbose lock karma-phantomjs-launcher@ /Users/edmondvanovertveldt/.npm/cdd40d81-karma-phantomjs-launcher.lock
+27 verbose addNamed [ '–save-dev', '' ]
+28 verbose addNamed [ null, '*' ]
+29 silly lockFile 370b9e36-save-dev –save-dev@
+30 verbose lock –save-dev@ /Users/edmondvanovertveldt/.npm/370b9e36-save-dev.lock
+31 silly addNameRange { name: 'karma-phantomjs-launcher', range: '*', hasData: false }
+32 silly addNameRange { name: '–save-dev', range: '*', hasData: false }
+33 verbose request where is /–save-dev
+34 verbose request registry https://registry.npmjs.org/
+35 verbose request id 7256a170b34e6032
+36 verbose url raw /–save-dev
+37 verbose url resolving [ 'https://registry.npmjs.org/', './%E2%80%93save-dev' ]
+38 verbose url resolved https://registry.npmjs.org/%E2%80%93save-dev
+39 verbose request where is https://registry.npmjs.org/%E2%80%93save-dev
+40 info trying registry request attempt 1 at 16:37:46
+41 http GET https://registry.npmjs.org/%E2%80%93save-dev
+42 verbose request where is /karma-phantomjs-launcher
+43 verbose request registry https://registry.npmjs.org/
+44 verbose url raw /karma-phantomjs-launcher
+45 verbose url resolving [ 'https://registry.npmjs.org/', './karma-phantomjs-launcher' ]
+46 verbose url resolved https://registry.npmjs.org/karma-phantomjs-launcher
+47 verbose request where is https://registry.npmjs.org/karma-phantomjs-launcher
+48 info trying registry request attempt 1 at 16:37:47
+49 verbose etag "2BFYUHPTQIYJ2TNJ46K2HV6TN"
+50 http GET https://registry.npmjs.org/karma-phantomjs-launcher
+51 http 200 https://registry.npmjs.org/karma-phantomjs-launcher
+52 silly registry.get cb [ 200,
+52 silly registry.get   { date: 'Tue, 11 Nov 2014 15:37:47 GMT',
+52 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+52 silly registry.get     etag: '"66UFY5MR6A83JYRYD5F5XPBQP"',
+52 silly registry.get     'content-type': 'application/json',
+52 silly registry.get     'cache-control': 'max-age=60',
+52 silly registry.get     'content-length': '12786',
+52 silly registry.get     'accept-ranges': 'bytes',
+52 silly registry.get     via: '1.1 varnish',
+52 silly registry.get     age: '23',
+52 silly registry.get     'x-served-by': 'cache-fra1225-FRA',
+52 silly registry.get     'x-cache': 'HIT',
+52 silly registry.get     'x-cache-hits': '1',
+52 silly registry.get     'x-timer': 'S1415720267.294440,VS0,VE0',
+52 silly registry.get     vary: 'Accept',
+52 silly registry.get     'keep-alive': 'timeout=10, max=50',
+52 silly registry.get     connection: 'Keep-Alive' } ]
+53 silly addNameRange number 2 { name: 'karma-phantomjs-launcher', range: '*', hasData: true }
+54 silly addNameRange versions [ 'karma-phantomjs-launcher',
+54 silly addNameRange   [ '0.0.1',
+54 silly addNameRange     '0.0.2',
+54 silly addNameRange     '0.0.3',
+54 silly addNameRange     '0.1.0',
+54 silly addNameRange     '0.1.1',
+54 silly addNameRange     '0.1.2',
+54 silly addNameRange     '0.1.3',
+54 silly addNameRange     '0.1.4' ] ]
+55 verbose addNamed [ 'karma-phantomjs-launcher', '0.1.4' ]
+56 verbose addNamed [ '0.1.4', '0.1.4' ]
+57 silly lockFile 5b4ecc13-karma-phantomjs-launcher-0-1-4 karma-phantomjs-launcher@0.1.4
+58 verbose lock karma-phantomjs-launcher@0.1.4 /Users/edmondvanovertveldt/.npm/5b4ecc13-karma-phantomjs-launcher-0-1-4.lock
+59 silly lockFile 5b4ecc13-karma-phantomjs-launcher-0-1-4 karma-phantomjs-launcher@0.1.4
+60 silly lockFile 5b4ecc13-karma-phantomjs-launcher-0-1-4 karma-phantomjs-launcher@0.1.4
+61 silly lockFile cdd40d81-karma-phantomjs-launcher karma-phantomjs-launcher@
+62 silly lockFile cdd40d81-karma-phantomjs-launcher karma-phantomjs-launcher@
+63 http 404 https://registry.npmjs.org/%E2%80%93save-dev
+64 verbose headers { date: 'Tue, 11 Nov 2014 15:37:48 GMT',
+64 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+64 verbose headers   'content-type': 'application/json',
+64 verbose headers   'cache-control': 'max-age=0',
+64 verbose headers   'content-length': '52',
+64 verbose headers   'accept-ranges': 'bytes',
+64 verbose headers   via: '1.1 varnish',
+64 verbose headers   age: '0',
+64 verbose headers   'x-served-by': 'cache-fra1221-FRA',
+64 verbose headers   'x-cache': 'MISS',
+64 verbose headers   'x-cache-hits': '0',
+64 verbose headers   'x-timer': 'S1415720267.285736,VS0,VE714',
+64 verbose headers   'keep-alive': 'timeout=10, max=50',
+64 verbose headers   connection: 'Keep-Alive' }
+65 silly registry.get cb [ 404,
+65 silly registry.get   { date: 'Tue, 11 Nov 2014 15:37:48 GMT',
+65 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+65 silly registry.get     'content-type': 'application/json',
+65 silly registry.get     'cache-control': 'max-age=0',
+65 silly registry.get     'content-length': '52',
+65 silly registry.get     'accept-ranges': 'bytes',
+65 silly registry.get     via: '1.1 varnish',
+65 silly registry.get     age: '0',
+65 silly registry.get     'x-served-by': 'cache-fra1221-FRA',
+65 silly registry.get     'x-cache': 'MISS',
+65 silly registry.get     'x-cache-hits': '0',
+65 silly registry.get     'x-timer': 'S1415720267.285736,VS0,VE714',
+65 silly registry.get     'keep-alive': 'timeout=10, max=50',
+65 silly registry.get     connection: 'Keep-Alive' } ]
+66 silly lockFile 370b9e36-save-dev –save-dev@
+67 silly lockFile 370b9e36-save-dev –save-dev@
+68 error 404 404 Not Found: %E2%80%93save-dev
+68 error 404
+68 error 404 '%E2%80%93save-dev' is not in the npm registry.
+68 error 404 You should bug the author to publish it
+68 error 404 It was specified as a dependency of 'lifemonitordoctor'
+68 error 404
+68 error 404 Note that you can also install from a
+68 error 404 tarball, folder, or http url, or git url.
+69 error System Darwin 14.0.0
+70 error command "node" "/usr/local/bin/npm" "install" "karma-phantomjs-launcher" "–save-dev"
+71 error cwd /Users/edmondvanovertveldt/Documents/COURS/M2/IIR/LifeMonitorProject/LifeMonitor_DoctorApp
+72 error node -v v0.10.32
+73 error npm -v 1.4.28
+74 error code E404
+75 verbose exit [ 1, true ]

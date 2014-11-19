@@ -25,7 +25,7 @@ app.controller('patientCtrl', ['$rootScope', '$scope', '$stateParams', '$state',
 		   	},
 		   	// ERROR
 		   	function(msg){
-		   		alert(msg);
+		   		alert('Error in loadPatient(' + $stateParams.id + ') method');
 		   	}
 		);
 	};

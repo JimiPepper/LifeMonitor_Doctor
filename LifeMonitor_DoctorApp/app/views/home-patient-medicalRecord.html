@@ -1,4 +1,5 @@
 <!-- Partial view :  Medical record-->
+
 <div class="medicalRecordContents">
   <h3 class="subTitle"> <img src="../images/medicalRecordicone.jpeg"> Medical record </h3>
   
@@ -8,7 +9,9 @@
 			class="list-group-item" 
 			ng-class=" { 'list-group-item-danger' : item.type == 'allergie', 'list-group-item-warning' : item.type == 'illnesse', 'list-group-item-success' : item.type == 'prescription' }">
         <div>
+
           <p> <span class="itemType"> {{item.type}} </span> : <span> {{item.name}} </span> </p>
+
           <div ng-if="item.treatments !== undifined"> 
             <p> treatments :</p>
             <ul>
@@ -17,8 +20,13 @@
               </li>
             </ul>
           </div>
-	    		<p> <span class="italic" ng-if="item.doctor !== undifined"> <strong>by</strong> {{item.doctor}} </span>  <span class="italic date" ng-if="item.date !== undifined"> <strong> date </strong> : {{item.date}} </span> </p>
-	       </div>
+
+	    		<p> 
+            <span class="italic" ng-if="item.doctor !== undifined"> <strong>by</strong> {{item.doctor}} </span>  
+            <span class="italic date" ng-if="item.date !== undifined"> <strong> date </strong> : {{item.date}} </span> 
+          </p>
+	       
+         </div>
     </li>
   </ul>
 

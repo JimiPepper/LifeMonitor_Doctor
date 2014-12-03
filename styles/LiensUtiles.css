@@ -1,0 +1,205 @@
+body
+
+{
+
+	font: 12px verdana;
+
+	margin: 0;
+
+	background : url('../images/background.gif') fixed repeat top right
+
+}
+
+
+
+div.titre
+
+{
+
+	background-image: url("http://az664837.vo.msecnd.net/images/bd/wide-linked-media/1751.jpg");
+
+	background-position: center ;
+
+	background-repeat: no-repeat;
+
+	height: 200px;
+
+	margin: 8px;
+
+}
+
+
+
+h1
+
+{
+
+	font-size: 2.3em;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	text-transform: uppercase;
+
+	border-radius: 4px;
+
+	display: block;
+
+	line-height: 35px;
+
+	vertical-align: middle;
+
+	width:100%;
+
+	height: 35px;
+
+	background-image: url("../images/bg_actif.gif");
+
+	background-position: center bottom;
+
+	background-repeat: repeat-x;
+
+}
+
+
+
+h2
+
+{
+
+	border-radius: 4px;
+
+	font-size: 1.5em;
+
+	text-align: center;
+
+	font-variant: small-caps;
+
+	color: #F9F9F9;
+
+	background-image: url("../images/bg_menu_nat.gif");
+
+	background-position: center top;
+
+	background-repeat: repeat-x;
+
+}
+
+
+
+.div_adresses
+
+{
+
+	display: block;
+
+	float: left;
+
+	width:17.2%;
+
+	margin:0.10%;
+
+	padding:20px;
+
+	min-height:100px;
+
+	min-width:250px;
+
+	overflow:hidden;
+
+	border-radius: 4px;
+
+}
+
+a
+
+{
+
+	color: #F2F2F2;
+
+	text-decoration:none;
+
+	width: 100%;
+
+	height: 100%;
+
+	padding-left: 7px;
+
+	display: block;
+
+	background-position: center bottom;
+
+	background-repeat: repeat-x;
+
+	vertical-align: middle;
+
+}
+
+
+
+a:link
+
+{
+
+	background-image: url("../images/bg_menu.gif");
+
+}
+
+
+
+a:visited
+
+{
+
+	background-image: url("../images/bg_menu.gif");
+
+}
+
+
+
+a:hover
+
+{
+
+	background-image: url("../images/bg_menu_nat.gif");
+
+}
+
+
+
+ul
+
+{
+
+ 	list-style: none outside none;
+
+	padding: 0;
+
+}
+
+
+
+ul li
+
+{
+
+	height: 20px;
+
+	line-height: 20px;
+
+	margin: 2px;
+
+	overflow:hidden;
+
+}
+
+
+
+.li_important a:link
+
+{
+
+	font-weight: bold;
+
+}
